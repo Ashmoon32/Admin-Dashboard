@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghost Admin Dashboard | New Users</title>
+
+    <!-- Bootstrap CSS CDN Link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!-- Bootstrap JavaScript CDN Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    
+    <!-- Fontawesome CDN link -->
+    <script src="https://kit.fontawesome.com/0303a573f3.js" crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <style>
+        .card {
+            transition: all 0.3s ease;
+            border-radius: 0.5rem;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body>
+    <!-- ✅ New Users Section -->
+    <section class="container mt-4">
+        <!-- Section Header -->
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h4><i class="fa-solid fa-user-plus text-primary me-2"></i> New Users</h4>
+            <button class="btn btn-sm btn-outline-primary">
+                <i class="fa-solid fa-rotate"></i> Refresh
+            </button>
+        </div>
+    
+        <!-- Quick Stats Cards -->
+        <div class="row g-3 mb-3">
+            <div class="col-4 col-md-3">
+                <div class="card text-center shadow-sm border-0">
+                    <div class="card-body">
+                        <i class="fa-solid fa-users fa-2x text-primary mb-2"></i>
+                        <h6 class="card-title">This Week</h6>
+                        <h5 class="fw-bold text-dark">12</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 col-md-3">
+                <div class="card text-center shadow-sm border-0">
+                    <div class="card-body">
+                        <i class="fa-solid fa-calendar-week fa-2x text-success mb-2"></i>
+                        <h6 class="card-title">This Month</h6>
+                        <h5 class="fw-bold text-dark">47</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 col-md-3">
+                <div class="card text-center shadow-sm border-0">
+                    <div class="card-body">
+                        <i class="fa-solid fa-calendar-plus fa-2x text-info mb-2"></i>
+                        <h6 class="card-title">This Year</h6>
+                        <h5 class="fw-bold text-dark">289</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Table -->
+        <div class="table-responsive">
+            <table class="table table-striped table-hover align-middle text-center">
+                <thead class="table-light">
+                    <tr>
+                        <th><i class="fa-solid fa-hashtag"></i> ID</th>
+                        <th><i class="fa-solid fa-user"></i> Name</th>
+                        <th class="d-none d-md-table-cell"><i class="fa-solid fa-envelope"></i> Email</th>
+                        <th><i class="fa-solid fa-calendar-plus"></i> Joined</th>
+                        <th class="d-none d-md-table-cell"><i class="fa-solid fa-circle-check"></i> Verified</th>
+                        <th><i class="fa-solid fa-ellipsis-vertical"></i> Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>John Doe</td>
+                        <td class="d-none d-md-table-cell">john@gmail.com</td>
+                        <td>2025-10-20</td>
+                        <td class="d-none d-md-table-cell">
+                            <span class="badge bg-success"><i class="fa-solid fa-check"></i> Accept</span>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-outline-success"><i class="fa-solid fa-user-check"></i></button>
+                            <button class="btn btn-sm btn-outline-danger"><i class="fa-solid fa-user-xmark"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Alice Smith</td>
+                        <td class="d-none d-md-table-cell">alice@gmail.com</td>
+                        <td>2025-10-19</td>
+                        <td class="d-none d-md-table-cell">
+                            <span class="badge bg-warning text-dark"><i class="fa-solid fa-clock"></i> Pending</span>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-outline-success"><i class="fa-solid fa-user-check"></i></button>
+                            <button class="btn btn-sm btn-outline-danger"><i class="fa-solid fa-user-xmark"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>William James</td>
+                        <td class="d-none d-md-table-cell">james@gmail.com</td>
+                        <td>2025-10-30</td>
+                        <td class="d-none d-md-table-cell">
+                            <span class="badge bg-danger text-white"><i class="fa-solid fa-clock"></i> Reject</span>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-outline-success"><i class="fa-solid fa-user-check"></i></button>
+                            <button class="btn btn-sm btn-outline-danger"><i class="fa-solid fa-user-xmark"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+</body>
+</html>
