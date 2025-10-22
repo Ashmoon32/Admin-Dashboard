@@ -21,12 +21,20 @@
         .card {
             transition: all 0.3s ease;
             border-radius: 0.5rem;
+            box-shadow: 2px 2px 3px #dfdfdfaa;
         }
+
+        /* .muted-text-cust {
+            color: #6c757d;
+        } */
 
         .card:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            background-color: rgba(41, 43, 41, 0.7);
+            color: #fff;
         }
+
     </style>
 </head>
 
@@ -46,7 +54,7 @@
                     <span class="list-group-item disabled d-none d-lg-block">
                         <small>CONTROLS</small>
                     </span>
-                    <a href="#" class="list-group-item list-group-item-action active">
+                    <a href="./index.html" class="list-group-item list-group-item-action active">
                         <i class="fas fa-home"></i>
                         <span class="d-none d-lg-inline">Dashboard</span>
                     </a>
@@ -177,21 +185,21 @@
                         <div class="col">
                             <h2 class="h6 text-white-50">LOCATION</h2>
 
-                            <div class="card mb-3" style="height: 280px;">
+                            <div class="card location-card mb-3" style="height: 280px;">
                                 <div class="card-body">
-                                    <small class="text-muted">Regional</small>
+                                    <small class="muted-text-cust ">Regional</small>
                                     <div class="progress mb-4 mt-2" style="height: 5px;">
                                         <div class="progress-bar bg-success w-25"></div>
                                     </div>
-                                    <small class="text-muted">Global</small>
+                                    <small class="muted-text-cust ">Global</small>
                                     <div class="progress mb-4 mt-2" style="height: 5px;">
                                         <div class="progress-bar bg-primary w-75"></div>
                                     </div>
-                                    <small class="text-muted">Local</small>
+                                    <small class="muted-text-cust ">Local</small>
                                     <div class="progress mb-4 mt-2" style="height: 5px;">
                                         <div class="progress-bar bg-warning w-50"></div>
                                     </div>
-                                    <small class="text-muted">Internal</small>
+                                    <small class="muted-text-cust ">Internal</small>
                                     <div class="progress mb-4 mt-2" style="height: 5px;">
                                         <div class="progress-bar bg-danger w-25"></div>
                                     </div>
