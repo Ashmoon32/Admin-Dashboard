@@ -35,7 +35,48 @@
             color: #fff;
         }
 
-    </style>
+
+        /* fade-in animation */
+        /* body {
+            opacity: 0;
+            animation: fadeIn 0.8s ease-in forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+             opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        } */
+
+        /* body {
+            opacity: 0;
+            transition: opacity 0.8s ease-in;
+        }
+
+        body.loaded {
+            opacity: 1;
+        } */
+
+        body {
+            opacity: 0;
+            transform: translateY(10px);
+            animation: fadeSlideIn 1s ease-out forwards;
+        }
+
+        @keyframes fadeSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style> 
 </head>
 
 <body>
@@ -280,6 +321,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+        <!-- custom script for fade in animation -->
+        <script>
+            window.addEventListener('load', () => {
+                document.body.classList.add('loaded');
+            });
+        </script>
 </body>
 
 </html>
